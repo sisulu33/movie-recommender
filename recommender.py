@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 def load_data():
-    movies = pd.read_csv('movies.csv')
-    ratings = pd.read_csv('ratings.csv')
+    movies = pd.read_csv('data/movies.csv')
+    ratings = pd.read_csv('data/ratings.csv')
     return movies, ratings
 
 def build_matrix(ratings):
